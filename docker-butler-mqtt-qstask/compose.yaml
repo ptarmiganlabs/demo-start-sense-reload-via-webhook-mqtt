@@ -1,0 +1,13 @@
+# Docker compose file to start Butler with minimal configuration, only the
+# mandatory parameters are set, plus configuration needed to start reload tasks via MQTT messages.
+version: "3.3"
+services:
+  butler:
+    image: ptarmiganlabs/butler:latest
+    container_name: butler
+    restart: unless-stopped
+    volumes:
+      - "./config:/nodeapp/config"
+      - "./log:/nodeapp/log"
+    environment:
+      - "NODE_ENV=butler-config"
