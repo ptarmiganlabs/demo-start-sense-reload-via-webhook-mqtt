@@ -5,7 +5,7 @@ securely start Qlik Sense reload tasks from anywhere, including from public Inte
 
 The sample code is used in the following blog post:
 
-https://qliksite.io/qlik-sense-reload-via-webhook-mqtt/
+https://ptarmiganlabs.com/how-to-start-qlik-sense-tasks-from-anywhere/
 
     NOTE:
     The sample code in this repository is provided as-is.  
